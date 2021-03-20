@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quinzical.controllers.RewardController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <Pane prefHeight="797.0" prefWidth="800.0">
+               <children>
+                  <Rectangle arcHeight="90.0" arcWidth="150.0" fill="#154a7c" height="355.0" layoutX="58.0" layoutY="201.0" opacity="0.5" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeType="INSIDE" width="702.0" />
+                  <Button fx:id="returnBtn" layoutX="548.0" layoutY="496.0" mnemonicParsing="false" onAction="#returnToMenu" prefHeight="38.0" prefWidth="39.0" />
+                  <Label layoutX="278.0" layoutY="507.0" text="Return to menu, where you can restart" />
+                  <Label fx:id="scoreLabel" alignment="CENTER" layoutX="296.0" layoutY="252.0" prefHeight="81.0" prefWidth="225.0" text="Score" textFill="WHITE">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutX="162.0" layoutY="223.0" prefHeight="29.0" prefWidth="493.0" text="You have finished all the questions with a final score of:" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="congratulationsLabel" alignment="CENTER" layoutX="42.0" layoutY="130.0" text="C O N G R A T U L A T I O N S" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutX="171.0" layoutY="393.0" prefHeight="29.0" prefWidth="192.0" text="You have also unlocked:" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="medalLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="350.0" prefHeight="16.0" prefWidth="153.0" text="medalLabel" textFill="#00ffbfad" />
+                  <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#154a7c" height="110.0" layoutX="426.0" layoutY="366.0" opacity="0.78" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="107.0" />
+                  <Pane fx:id="rewardPane" layoutX="431.0" layoutY="372.0" prefHeight="100.0" prefWidth="100.0" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../resources/stylesheets/QuinzicalStyle.css" />
+   </stylesheets>
+</StackPane>

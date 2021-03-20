@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quinzical.controllers.MenuController">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="610.0" prefWidth="499.0" spacing="10.0" StackPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="_menuPane" layoutY="100.0" prefHeight="604.0" prefWidth="499.0">
+               <children>
+                  <Button fx:id="leader" layoutX="146.0" layoutY="379.0" mnemonicParsing="false" onAction="#changeToLeaderboard" prefHeight="26.0" prefWidth="207.0">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                           <input>
+                              <InnerShadow>
+                                 <color>
+                                    <Color green="0.9176470637321472" blue="1.0" />
+                                 </color>
+                              </InnerShadow>
+                           </input>
+                        </DropShadow>
+                     </effect>
+                     <graphic>
+                        <Text fx:id="leaderboardText" strokeType="OUTSIDE" strokeWidth="0.0" text="L e a d e r b o a r d s">
+                           <effect>
+                              <DropShadow spread="0.8">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Text>
+                     </graphic></Button>
+                  <Button fx:id="settings" layoutX="146.0" layoutY="326.0" mnemonicParsing="false" onAction="#changeToSettings" prefHeight="26.0" prefWidth="207.0">
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX">
+                           <input>
+                              <InnerShadow>
+                                 <color>
+                                    <Color green="0.9176470637321472" blue="1.0" />
+                                 </color></InnerShadow>
+                           </input>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <graphic>
+                        <Text fx:id="settingText" strokeType="OUTSIDE" strokeWidth="0.0" text="S e t t i n g s">
+                           <effect>
+                              <DropShadow spread="0.8">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Text>
+                     </graphic></Button>
+                  <Button fx:id="practise" layoutX="146.0" layoutY="274.0" mnemonicParsing="false" onAction="#changeToPracticeModule" prefHeight="26.0" prefWidth="207.0">
+                     <effect>
+                        <DropShadow>
+                           <input>
+                              <InnerShadow blurType="TWO_PASS_BOX">
+                                 <color>
+                                    <Color green="0.9176470637321472" blue="1.0" />
+                                 </color></InnerShadow>
+                           </input>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <graphic>
+                        <Text fx:id="practiseText" strokeType="OUTSIDE" strokeWidth="0.0" text="P r a c t i s e  M o d e">
+                           <effect>
+                              <DropShadow spread="0.8">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Text>
+                     </graphic></Button>
+                  <Button fx:id="gameButton" alignment="TOP_CENTER" layoutX="146.0" layoutY="223.0" mnemonicParsing="false" onAction="#changeToGameModule" prefHeight="26.0" prefWidth="207.0" textAlignment="CENTER" textFill="#3f573f">
+                     <effect>
+                        <DropShadow>
+                           <input>
+                              <InnerShadow blurType="TWO_PASS_BOX">
+                                 <color>
+                                    <Color green="0.8823529481887817" blue="1.0" />
+                                 </color></InnerShadow>
+                           </input>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <graphic>
+                        <Text fx:id="gameText" strokeType="OUTSIDE" strokeWidth="0.0" text="G a m e  M o d e">
+                           <effect>
+                              <DropShadow spread="0.8">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </DropShadow>
+                           </effect></Text>
+                     </graphic></Button>
+                  <Label fx:id="label" alignment="TOP_CENTER" centerShape="false" layoutX="-39.0" layoutY="7.0" text="Q U I N Z I C A L" textFill="WHITE">
+                     <font>
+                        <Font size="72.0" />
+                     </font>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" />
+                     </effect>
+                  </Label>
+               </children>
+            </Pane>
+         </children></VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../resources/stylesheets/QuinzicalStyle.css" />
+   </stylesheets>
+</StackPane>

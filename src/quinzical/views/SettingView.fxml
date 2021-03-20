@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane onDragDone="#getSliderValue" onMouseClicked="#getSliderValue" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quinzical.controllers.SettingController">
+   <children>
+      <VBox alignment="BOTTOM_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0">
+               <children>
+                  <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#a2e4eb" height="430.0" layoutX="186.0" layoutY="429.0" opacity="0.7" stroke="#482b97" strokeType="INSIDE" strokeWidth="2.0" width="428.0" />
+                  <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#a2e4eb" height="83.0" layoutX="186.0" layoutY="348.0" opacity="0.8" stroke="#482b97" strokeType="INSIDE" strokeWidth="2.0" width="428.0" />
+                  <Button fx:id="returnBtn" alignment="CENTER" layoutX="568.0" layoutY="812.0" mnemonicParsing="false" onAction="#returnToMenu" prefHeight="39.0" prefWidth="40.0" />
+                  <Button fx:id="reset" alignment="CENTER" layoutX="246.0" layoutY="526.0" mnemonicParsing="false" onAction="#resetSliderValue" prefHeight="39.0" prefWidth="40.0" textAlignment="CENTER" />
+                  <Slider fx:id="SpeedSlider" layoutX="200.0" layoutY="482.0" majorTickUnit="1.0" max="2.0" min="0.5" minorTickCount="5" onDragDone="#getSliderValue" onMouseClicked="#getSliderValue" opacity="0.8" prefHeight="16.0" prefWidth="400.0" showTickLabels="true" showTickMarks="true" value="1.0">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect></Slider>
+                  <Label layoutX="200.0" layoutY="458.0" prefHeight="16.0" prefWidth="194.0" text="Change speed of text reader" />
+                  <Button fx:id="testSpeed" layoutX="194.0" layoutY="526.0" mnemonicParsing="false" onAction="#testSpeed" prefHeight="39.0" prefWidth="40.0" />
+                  <Text fx:id="title" fill="WHITE" layoutX="261.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S e t t i n g s" textAlignment="CENTER" wrappingWidth="326.7294921875">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="quinzical" fill="WHITE" layoutX="111.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q U I N Z I C A L">
+                     <font>
+                        <Font size="72.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Text>
+                  <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="79.0" layoutX="188.0" layoutY="350.0" opacity="0.7" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="78.0" />
+                  <Pane fx:id="_settingIcon" layoutX="202.0" layoutY="366.0" prefHeight="50.0" prefWidth="50.0" />
+                  <Label layoutX="200.0" layoutY="591.0" prefHeight="16.0" prefWidth="243.0" text="Change the voice of the text reader" />
+                  <ChoiceBox fx:id="voiceList" layoutX="200.0" layoutY="622.0" opacity="0.8" prefWidth="150.0" />
+                  <Button fx:id="confirm" layoutX="361.0" layoutY="622.0" mnemonicParsing="false" onAction="#setVoice" prefHeight="26.0" prefWidth="126.0" text="Confirm">
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color green="0.9176470637321472" blue="1.0" />
+                           </color>
+                        </InnerShadow>
+                     </effect></Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../resources/stylesheets/QuinzicalStyle.css" />
+   </stylesheets>
+</StackPane>

@@ -1,0 +1,99 @@
+.root {
+    -fx-background-image: url("../backgrounds/nz.png");
+    -fx-background-size: cover;
+}
+.button {
+    -fx-arc-height: 0px;
+    -fx-background-radius: 10;
+    -fx-background-color: rgba(178, 255, 255,0.8);
+}
+.button:hover {
+    -fx-background-color: linear-gradient(rgba(178, 255, 255,0.8) 0%,White 0%) !important;
+}
+.button:pressed{
+    -fx-background-color: rgba(0,255,0,0.8) !important;
+}
+#testSpeed {
+    -fx-background-image: url(../buttons/play.png) !important;
+    -fx-background-color: transparent ;
+    -fx-background-size: 40px 39px !important;
+}
+#reset {
+    -fx-background-image: url(../buttons/replay.png) !important;
+    -fx-background-size: 40px 39px !important;
+    -fx-background-color: transparent ;
+}
+#_settingIcon {
+    -fx-background-image: url(../backgrounds/settings.png) !important;
+    -fx-background-size: cover !important;
+}
+#returnBtn {
+    -fx-background-image: url(../buttons/return.png) !important;
+    -fx-background-size: 39px 38px !important;
+    -fx-background-color: transparent ;
+}
+#ResetButton {
+    -fx-background-image: url(../buttons/restart.png) !important;
+    -fx-background-size: 39px 38px !important;
+    -fx-background-color: transparent ;
+}
+.list-cell {
+    -fx-cell-size: 36 !important;
+    -fx-background-radius: 20 !important;
+
+}
+.list-cell:selected {
+    -fx-cell-size: 56 !important;
+    -fx-background-radius: 20 !important;
+    -fx-background-color: linear-gradient(to right,#a6cff5 0%,White 95%);
+    -fx-text-fill: Black;
+}
+#submit {
+    -fx-background-image: url(../buttons/submit.png) !important;
+    -fx-background-size: 39px 38px !important;
+    -fx-background-color: transparent ;
+}
+#rewardPane{
+    -fx-background-size: 100px 100px !important;
+}
+
+#medalDiamond{
+    -fx-background-size: 100px 100px !important;
+}
+#medalBronze{
+    -fx-background-size: 100px 100px !important;
+}
+#medalSilver{
+    -fx-background-size: 100px 100px !important;
+}
+#medalGold{
+    -fx-background-size: 100px 100px !important;
+}
+#medalParticipation{
+    -fx-background-size: 100px 100px !important;
+}
+#medalPane{
+    -fx-background-color: rgba(220, 240, 250,0.8);
+}
+.tooltip{
+    -fx-text-fill: black;
+    -fx-background-color: white;
+    -fx-font-size: 13px;
+}
+.choice-box {
+    -fx-background-color: white;
+    -fx-mark-color: #a2e1a2;
+    -fx-background-radius: 10;
+}
+.choice-box .menu-item:focused {
+    -fx-background-color: #a2e1a2;
+}
+.slider {
+    -fx-font-size: 16px;
+}
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quinzical.controllers.LeaderboardController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="779.0" StackPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="600.0" prefWidth="612.0">
+               <children>
+                  <Pane fx:id="medalPane" layoutX="438.0" layoutY="117.0" prefHeight="433.0" prefWidth="266.0">
+                     <children>
+                        <Pane fx:id="medalParticipation" layoutX="20.0" layoutY="64.0" prefHeight="100.0" prefWidth="100.0" />
+                        <Pane fx:id="medalDiamond" layoutX="83.0" layoutY="284.0" prefHeight="100.0" prefWidth="100.0" />
+                        <Pane fx:id="medalBronze" layoutX="133.0" layoutY="64.0" prefHeight="100.0" prefWidth="100.0" />
+                        <Pane fx:id="medalSilver" layoutX="20.0" layoutY="171.0" prefHeight="100.0" prefWidth="100.0" />
+                        <Pane fx:id="medalGold" layoutX="133.0" layoutY="171.0" prefHeight="100.0" prefWidth="100.0" />
+                        <Label fx:id="unlock" alignment="CENTER" layoutX="43.0" layoutY="14.0" prefHeight="24.0" prefWidth="180.0" text="Unlocked Rewards">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button fx:id="returnBtn" layoutX="734.0" layoutY="549.0" mnemonicParsing="false" onAction="#returnToMenu" prefHeight="38.0" prefWidth="39.0" />
+                  <ListView fx:id="leaderboardView" layoutX="52.0" layoutY="116.0" opacity="0.7" prefHeight="433.0" prefWidth="374.0" />
+                  <Label fx:id="text" layoutX="40.0" layoutY="24.0" text="Leaderboard &amp; Rewards" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="55.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../resources/stylesheets/QuinzicalStyle.css" />
+   </stylesheets>
+</StackPane>

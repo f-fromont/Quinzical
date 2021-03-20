@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="stack" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quinzical.controllers.QuestionController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="598.0" prefWidth="796.0">
+         <children>
+            <Pane prefHeight="606.0" prefWidth="796.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="80.0" fill="#a6cff5" height="209.0" layoutX="45.0" layoutY="167.0" opacity="0.8" stroke="#2b1cb866" strokeLineCap="ROUND" strokeType="INSIDE" width="696.0" />
+                  <Circle fx:id="_background" fill="#badeff" layoutX="674.0" layoutY="221.0" radius="47.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+                  <TextField fx:id="userAnswer" layoutX="90.0" layoutY="247.0" />
+                  <Label fx:id="_questionLabel" layoutX="90.0" layoutY="179.0" prefHeight="62.0" prefWidth="445.0" text="Enter your answer below:" wrapText="true">
+                     <font>
+                        <Font name="KacstOne" size="24.0" />
+                     </font></Label>
+                  <Button fx:id="gameSubmit" disable="true" layoutX="90.0" layoutY="280.0" mnemonicParsing="false" onAction="#changeToAnswer" prefHeight="38.0" prefWidth="39.0" textAlignment="CENTER">
+                     <effect>
+                        <DropShadow>
+                           <input>
+                              <InnerShadow>
+                                 <color>
+                                    <Color green="0.8823529481887817" blue="1.0" />
+                                 </color>
+                              </InnerShadow>
+                           </input>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect></Button>
+                  <Button fx:id="replayGameQuestion" disable="true" layoutX="220.0" layoutY="280.0" mnemonicParsing="false" onAction="#replayQuestionClue" prefHeight="38.0" prefWidth="40.0">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                           <input>
+                              <InnerShadow>
+                                 <color>
+                                    <Color green="0.8823529481887817" blue="1.0" />
+                                 </color>
+                              </InnerShadow>
+                           </input>
+                        </DropShadow>
+                     </effect></Button>
+                  <Label fx:id="timerLabel" alignment="CENTER" layoutX="655.0" layoutY="204.0" prefHeight="26.0" prefWidth="39.0" text="20" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="dontKnowBtn" disable="true" layoutX="155.0" layoutY="280.0" mnemonicParsing="false" onAction="#changeToAnswer" prefHeight="38.0" prefWidth="39.0">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                           <input>
+                              <InnerShadow>
+                                 <color>
+                                    <Color green="0.8823529481887817" blue="1.0" />
+                                 </color>
+                              </InnerShadow>
+                           </input>
+                        </DropShadow>
+                     </effect></Button>
+                  <Button fx:id="macronA" layoutX="282.0" layoutY="247.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="ā" />
+                  <Button fx:id="macronE" layoutX="332.0" layoutY="247.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="ē" />
+                  <Button fx:id="macronI" layoutX="382.0" layoutY="247.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="ī" />
+                  <Button fx:id="macronO" layoutX="432.0" layoutY="247.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="ō" />
+                  <Button fx:id="macronU" layoutX="482.0" layoutY="247.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="ū" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../resources/stylesheets/GameStyle.css" />
+   </stylesheets>
+</StackPane>

@@ -1,0 +1,82 @@
+
+.button {
+    -fx-arc-height: 0px;
+    -fx-background-radius: 10;
+    -fx-background-color: rgba(178, 255, 255,0.8);
+}
+.button:hover {
+    -fx-background-color: linear-gradient(rgba(178, 255, 255,0.8) 0%,White 0%) !important;
+}
+.button:pressed{
+    -fx-background-color: rgba(0,255,0,0.8) !important;
+}
+.text-field{
+    -fx-background-radius: 10;
+    -fx-background-color: rgba(178, 255, 255,0.8);
+
+}
+#gameSubmit {
+    -fx-background-image: url(../buttons/submit.png) !important;
+    -fx-background-size: 39px 38px !important;
+    -fx-background-color: transparent ;
+}
+#dontKnowBtn {
+    -fx-background-image: url(../buttons/question.png) !important;
+    -fx-background-size: 39px 38px !important;
+    -fx-background-color: transparent ;
+}
+#replayGameQuestion {
+    -fx-background-image: url(../buttons/replay.png) !important;
+    -fx-background-size: 39px 38px !important;
+    -fx-background-color: transparent ;
+}
+#submit {
+    -fx-background-image: url(../buttons/submit.png) !important;
+    -fx-background-size: 39px 38px !important;
+    -fx-background-color: transparent ;
+}
+#replayQuestion {
+    -fx-background-image: url(../buttons/replay.png) !important;
+    -fx-background-size: 39px 38px !important;
+    -fx-background-color: transparent !important; ;
+}
+#tryAgain {
+    -fx-background-image: url(../buttons/replayquestion.png) !important;
+    -fx-background-size: cover !important;
+    -fx-background-color: transparent ;
+}
+#questionBtn{
+    -fx-background-image: url(../buttons/replay.png) !important;
+    -fx-background-size: 39px 38px !important;
+    -fx-background-color: transparent ;
+}
+#menuButton {
+    -fx-background-image: url(../buttons/return.png) !important;
+    -fx-background-size: 39px 38px !important;
+    -fx-background-color: transparent ;
+}
+#returnBtn {
+    -fx-background-image: url(../buttons/return.png) !important;
+    -fx-background-size: 39px 38px !important;
+    -fx-background-color: transparent ;
+}
+.tooltip{
+    -fx-text-fill: black;
+    -fx-background-color: white;
+    -fx-font-size: 13px;
+}
+#macronA {
+    -fx-background-radius: 100px !important;
+}
+#macronE {
+    -fx-background-radius: 100px !important;
+}
+#macronI{
+    -fx-background-radius: 100px !important;
+}
+#macronO{
+    -fx-background-radius: 100px !important;
+}
+#macronU{
+    -fx-background-radius: 100px !important;
+}

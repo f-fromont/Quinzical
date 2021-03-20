@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="stack" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quinzical.controllers.AnswerController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="599.0" prefWidth="799.0">
+         <children>
+            <Pane prefHeight="600.0" prefWidth="457.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#a6cff5" height="278.0" layoutX="176.0" layoutY="114.0" opacity="0.8" stroke="#2b1cb866" strokeLineCap="ROUND" strokeType="INSIDE" width="460.0" />
+                  <Label fx:id="messageLabel" layoutX="190.0" layoutY="259.0" prefHeight="67.0" prefWidth="444.0" text="message" wrapText="true">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Label>
+                  <Button fx:id="menuButton" layoutX="190.0" layoutY="326.0" mnemonicParsing="false" onAction="#returnToMenu" prefHeight="38.0" prefWidth="39.0" textAlignment="CENTER">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect></Button>
+                  <Label fx:id="correctLabel" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="187.0" layoutY="130.0" text="correctLabel">
+                     <font>
+                        <Font size="46.0" />
+                     </font></Label>
+                  <Label fx:id="clue" layoutX="191.0" layoutY="207.0" prefHeight="63.0" prefWidth="437.0" text="original clue" visible="false" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Button fx:id="questionBtn" layoutX="251.0" layoutY="326.0" mnemonicParsing="false" onAction="#changeToNextScene" prefHeight="39.0" prefWidth="40.0" textAlignment="CENTER">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../resources/stylesheets/GameStyle.css" />
+   </stylesheets>
+</StackPane>

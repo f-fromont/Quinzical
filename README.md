@@ -21,12 +21,12 @@ Note: This assumes that you have festival installed in usr/share if you have it 
 
 What I have learnt from this Project
 
-What it is like to work with someone else in developing a project.
-How to develop a persistent state between instances of the program to track the users data when the program is shut and opened again.
-Using the JavaFX framework to develop a nice GUI and making decisions suitable for the end-user.
-Incorporating some common design patterns like the Singleton pattern, as well as the Model-View-Controller for designing gui applications.
-learnt more about using java processes and even the system builder for incorporating Linux processes. 
-I also learnt more about using Git effectively.
+-What it is like to work with someone else in developing a project.
+-How to develop a persistent state between instances of the program to track the users data when the program is shut and opened again.
+-Using the JavaFX framework to develop a nice GUI and making decisions suitable for the end-user.
+-Incorporating some common design patterns like the Singleton pattern, as well as the Model-View-Controller for designing gui applications.
+-Learnt more about using java processes and even the system builder for incorporating Linux processes. 
+-I also learnt more about using Git effectively.
 
 --ff-dev-45
 

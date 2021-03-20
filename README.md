@@ -1,4 +1,6 @@
-This was a project designed in a virtual image of am ubuntu linux environment, this can still be run on a windows environment however some features like the 'festival' module which is used for the text-to-speech question reader will not work.
+QUINZICAL
+
+This was a project designed in a virtual image of a ubuntu linux environment, this can still be run on a windows environment however some features like the 'festival' module which is used for the text-to-speech question reader will not work.
 This was also created for a university course as a project, and I would like to thank my partner Luxman and our lecturer Nasser for the assistance provided in teaching the course.
 
 TO-RUN
